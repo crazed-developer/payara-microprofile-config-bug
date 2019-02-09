@@ -13,6 +13,7 @@ There are two references to Serializeable in there.
 
 
 On Payara this exception is thrown on deployment:
+
 [2019-02-09T16:28:53.473+0100] [Payara 5.184] [SEVERE] [NCLS-CORE-00026] [javax.enterprise.system.core] [tid: _ThreadID=57 _ThreadName=admin-thread-pool::admin-listener(1)] [timeMillis: 1549726133473] [levelValue: 1000] [[
   Exception during lifecycle processing
 org.glassfish.deployment.common.DeploymentException: CDI deployment failure:WELD-001413: The bean Managed Bean [class soj.config.ViewScopedBean] with qualifiers [@Default @Any @Named] declares a passivating scope but has a non-passivation-capable dependency WELD%AbstractSyntheticBean%fish.payara.microprofile.config.cdi.ConfigPropertyProducer%null,javax.enterprise.context.Dependent,false[@javax.enterprise.inject.Any()@org.eclipse.microprofile.config.inject.ConfigProperty(defaultValue=org.eclipse.microprofile.config.configproperty.unconfigureddvalue,name=)][][[Ljava.lang.String;,java.lang.String] -- WELD-001413: The bean Managed Bean [class soj.config.ViewScopedBean] with qualifiers [@Default @Any @Named] declares a passivating scope but has a non-passivation-capable dependency WELD%AbstractSyntheticBean%fish.payara.microprofile.config.cdi.ConfigPropertyProducer%null,javax.enterprise.context.Dependent,false[@javax.enterprise.inject.Any()@org.eclipse.microprofile.config.inject.ConfigProperty(defaultValue=org.eclipse.microprofile.config.configproperty.unconfigureddvalue,name=)][][[Ljava.lang.String;,java.lang.String]
